@@ -1,0 +1,101 @@
+{
+  "name": "yjdf-wxmp",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development VUE_APP_ENV=dev UNI_PLATFORM=mp-weixin vue-cli-service uni-build --watch",
+    "build:test": "npm run build:mp-weixin-test",
+    "build": "npm run build:mp-weixin",
+    "serve": "npm run dev:h5",
+    "build:app-plus": "cross-env NODE_ENV=production UNI_PLATFORM=app-plus vue-cli-service uni-build",
+    "build:h5": "cross-env NODE_ENV=production UNI_PLATFORM=h5 vue-cli-service uni-build",
+    "build:mp-alipay": "cross-env NODE_ENV=production UNI_PLATFORM=mp-alipay vue-cli-service uni-build",
+    "build:mp-baidu": "cross-env NODE_ENV=production UNI_PLATFORM=mp-baidu vue-cli-service uni-build",
+    "build:mp-qq": "cross-env NODE_ENV=production UNI_PLATFORM=mp-qq vue-cli-service uni-build",
+    "build:mp-toutiao": "cross-env NODE_ENV=production UNI_PLATFORM=mp-toutiao vue-cli-service uni-build",
+    "build:mp-weixin-test": "cross-env NODE_ENV=production VUE_APP_ENV=test UNI_PLATFORM=mp-weixin vue-cli-service uni-build",
+    "build:mp-weixin": "cross-env NODE_ENV=production VUE_APP_ENV=prod UNI_PLATFORM=mp-weixin vue-cli-service uni-build",
+    "dev:app-plus": "cross-env NODE_ENV=development UNI_PLATFORM=app-plus vue-cli-service uni-build --watch",
+    "dev:h5": "cross-env NODE_ENV=development UNI_PLATFORM=h5 vue-cli-service uni-serve",
+    "dev:mp-alipay": "cross-env NODE_ENV=development UNI_PLATFORM=mp-alipay vue-cli-service uni-build --watch",
+    "dev:mp-baidu": "cross-env NODE_ENV=development UNI_PLATFORM=mp-baidu vue-cli-service uni-build --watch",
+    "dev:mp-qq": "cross-env NODE_ENV=development UNI_PLATFORM=mp-qq vue-cli-service uni-build --watch",
+    "dev:mp-toutiao": "cross-env NODE_ENV=development UNI_PLATFORM=mp-toutiao vue-cli-service uni-build --watch",
+    "dev:mp-weixin": "cross-env NODE_ENV=development UNI_PLATFORM=mp-weixin vue-cli-service uni-build --watch",
+    "info": "node node_modules/@dcloudio/vue-cli-plugin-uni/commands/info.js",
+    "lint": "eslint --ext .js --ext .jsx --ext .vue src/",
+    "lint-fix": "eslint --fix --ext .js --ext .jsx --ext .vue src/"
+  },
+  "dependencies": {
+    "@dcloudio/uni-app-plus": "^2.0.0-27920200618002",
+    "@dcloudio/uni-h5": "^2.0.0-27920200618002",
+    "@dcloudio/uni-helper-json": "*",
+    "@dcloudio/uni-mp-360": "^2.0.0-27920200618002",
+    "@dcloudio/uni-mp-alipay": "^2.0.0-27920200618002",
+    "@dcloudio/uni-mp-baidu": "^2.0.0-27920200618002",
+    "@dcloudio/uni-mp-qq": "^2.0.0-27920200618002",
+    "@dcloudio/uni-mp-toutiao": "^2.0.0-27920200618002",
+    "@dcloudio/uni-mp-weixin": "^2.0.0-27920200618002",
+    "@dcloudio/uni-quickapp-native": "^2.0.0-27920200618002",
+    "@dcloudio/uni-quickapp-webview": "^2.0.0-27920200618002",
+    "@dcloudio/uni-stat": "^2.0.0-27920200618002",
+    "@vant/weapp": "^1.5.0",
+    "address-parse": "^1.2.9",
+    "axios": "^0.19.2",
+    "core-js": "^3.6.5",
+    "flyio": "^0.6.2",
+    "numbro": "^2.3.2",
+    "regenerator-runtime": "^0.12.1",
+    "vue": "^2.6.11",
+    "vuex": "^3.2.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-eslint": "4.4.4",
+    "@dcloudio/types": "*",
+    "@dcloudio/uni-automator": "^2.0.0-27920200618002",
+    "@dcloudio/uni-cli-shared": "^2.0.0-27920200618002",
+    "@dcloudio/uni-migration": "^2.0.0-27920200618002",
+    "@dcloudio/uni-template-compiler": "^2.0.0-27920200618002",
+    "@dcloudio/vue-cli-plugin-hbuilderx": "^2.0.0-27920200618002",
+    "@dcloudio/vue-cli-plugin-uni": "^2.0.0-27920200618002",
+    "@dcloudio/vue-cli-plugin-uni-optimize": "^2.0.0-27920200618002",
+    "@dcloudio/webpack-uni-mp-loader": "^2.0.0-27920200618002",
+    "@dcloudio/webpack-uni-pages-loader": "^2.0.0-27920200618002",
+    "@vue/cli-plugin-babel": "~4.4.0",
+    "@vue/cli-service": "~4.4.0",
+    "babel-plugin-import": "^1.11.0",
+    "cross-env": "^7.0.2",
+    "eslint": "^7.20.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.3.1",
+    "eslint-plugin-vue": "^7.6.0",
+    "jest": "^25.4.0",
+    "mini-types": "*",
+    "miniprogram-api-typings": "*",
+    "node-sass": "^4.14.1",
+    "postcss-comment": "^2.0.0",
+    "sass-loader": "^7.1.0",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "browserslist": [
+    "last 3 versions",
+    "Android >= 4.4",
+    "ios >= 8"
+  ],
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  }
+}

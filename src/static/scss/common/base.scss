@@ -1,0 +1,183 @@
+@import './var.scss';
+@import '../mixins/border.scss';
+@import '../mixins/ellipsis.scss';
+
+// 遍历生成padding和margin(2-300之间的偶数)
+@for $size from 0 through 300{
+  @if $size%2 == 0 {
+    .p#{$size} { padding: $size + $unit !important; }
+    .pt#{$size} { padding-top: $size + $unit !important; }
+    .pb#{$size} { padding-bottom: $size + $unit !important; }
+    .pl#{$size} { padding-left: $size + $unit !important; }
+    .pr#{$size} { padding-right: $size + $unit !important; }
+    .ptb#{$size} { padding-top: $size + $unit !important; padding-bottom: $size + $unit !important; }
+    .plr#{$size} { padding-left: $size + $unit !important; padding-right: $size + $unit !important; }
+    .m#{$size} { margin: $size + $unit !important; }
+    .mt#{$size} { margin-top: $size + $unit !important; }
+    .mb#{$size} { margin-bottom: $size + $unit !important; }
+    .ml#{$size} { margin-left: $size + $unit !important; }
+    .mr#{$size} { margin-right: $size + $unit !important; }
+    .mtb#{$size} { margin-top: $size + $unit !important; margin-bottom: $size + $unit !important; }
+    .mlr#{$size} { margin-left: $size + $unit !important; margin-right: $size + $unit !important; }
+  }
+}
+
+// 字体大小
+@for $size from 10 through 80{
+  .fs#{$size} { font-size: $size + $unit !important; }
+}
+
+// 字体粗细
+$fontWeights: 100, 200, 300, 400, 500, 600, 700, 800, 900;
+@each $weight in $fontWeights {
+  .fw#{$weight} { font-weight: $weight !important; }
+}
+
+// 宽高
+@for $size from 2 through 500{
+  @if $size%2 == 0 {
+    .w#{$size} { width: $size + $unit !important}
+    .h#{$size} { height: $size + $unit !important}
+    .w-h#{$size} { width: $size + $unit !important; height: $size + $unit !important}
+    .l-h#{$size} { line-height: $size + $unit !important}
+    .br#{$size} { border-radius:$size + $unit !important; }
+    .wpct#{$size} { width: percentage($size/100)  !important; }
+  }
+}
+
+// 圆角大小
+@for $size from 1 through 50{
+  .radius#{$size} { border-radius: $size + $unit !important; }
+}
+
+.radius{ border-radius: 50% !important; }
+
+// 颜色
+$color-list: (
+  'red': $red,
+  'red-light': $red-light,
+  'red-dark': $red-dark,
+  'green': $green,
+  'green-light': $green-light,
+  'green-dark': $green-dark,
+  'blue': $blue,
+  'blue-light': $blue-light,
+  'blue-dark': $blue-dark,
+  'orange': $orange,
+  'orange-light': $orange-light,
+  'orange-dark': $orange-dark,
+  'pink': $pink,
+  'pink-light': $pink-light,
+  'pink-dark': $pink-dark,
+  'gray': $gray,
+  'gray-light': $gray-light,
+  'gray-dark': $gray-dark,
+  'gray-sample': $gray-sample,
+  'black': $black,
+  'black-light': $black-light,
+  'black-dark': $black-dark,
+  'white': $white
+);
+@each $key,$color in $color-list {
+  .#{$key} { color: $color !important; }
+  .#{$key}-bg { background-color: $color !important; }
+}
+
+.w-full{width: 100% !important;}
+
+.h-full{height: 100% !important;}
+
+.w-h-full{ width: 100% !important; height: 100% !important; }
+
+@for $size from -50 through 50{
+  .top#{$size} { top: $size + $unit }
+  .bottom#{$size} { bottom: $size + $unit }
+  .left#{$size} { left: $size + $unit }
+  .right#{$size} { right: $size + $unit }
+}
+.relative{ position: relative !important; }
+
+.absolute{ position: absolute !important; }
+
+.fixed{ position: fixed !important; }
+
+.y-scroll{ overflow-y: scroll !important; overflow-x: hidden !important; }
+
+.x-scroll{ overflow-x: scroll !important; overflow-y: hidden !important; }
+
+.scroll{overflow: scroll !important;}
+
+.overflow-auto{overflow: auto !important;}
+
+.hidden{overflow: hidden !important;}
+
+.border-box{box-sizing: border-box !important;}
+
+.border-bottom{ @include border-bottom(); }
+
+.ellipsis{ @include ellipsis(); }
+
+.ellipsis2{ @include multi-ellipsis(2); }
+
+.ellipsis3{ @include multi-ellipsis(3); }
+
+.pointer{ cursor: pointer !important; }
+
+.pos-center{ position: absolute !important; top: 50% !important; left: 50% !important; transform: translate(-50%, -50%) !important; }
+
+.text-center{ text-align: center !important; }
+
+.text-left{ text-align: left !important; }
+
+.text-right{ text-align: right !important; }
+
+.block{ display: block !important; }
+
+.inline-block{ display: inline-block !important; }
+
+.row{
+  display: flex !important;
+  &-reverse{
+    flex-direction: row-reverse !important;
+  }
+}
+.col{
+  display: flex !important;
+  flex-direction: column !important;
+  &-reverse{
+    flex-direction: column-reverse !important;
+  }
+}
+@for $n from 1 through 24{
+  .flex-#{$n} { flex: $n !important; }
+}
+.flex-none{ flex: none !important; }
+
+.shrink0{ flex-shrink: 0 !important; }
+
+.center-x{ justify-content: center !important; text-align: center !important; }
+
+.center-y{ align-items: center !important; }
+
+.center{ justify-content: center !important; align-items: center !important; }
+
+$flex-wrap: nowrap, wrap, wrap-reverse;
+@each $val in $flex-wrap {
+  .#{$val} { flex-wrap: $val !important; }
+}
+
+$justify-content: flex-start, flex-end, space-between, space-around;
+@each $val in $justify-content {
+  .#{$val} { justify-content: $val !important; }
+}
+
+$align-items: flex-start, flex-end, baseline, stretch;
+@each $val in $align-items {
+  .#{$val} { align-items: $val !important; }
+}
+
+.mauto{ margin: 0 auto }
+
+image {
+  height: auto;
+}

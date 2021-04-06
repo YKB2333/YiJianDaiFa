@@ -1,0 +1,537 @@
+{
+	"pages": [
+		{
+			"path": "pages/start"
+		},
+		{
+			"path": "pages/tabbar/Home",
+			"style": {
+				"navigationBarTitleText": "首页",
+				"enablePullDownRefresh": false,
+				"usingComponents": {
+					"van-search": "/wxcomponents/vant/search/index",
+					"van-tab": "/wxcomponents/vant/tab/index",
+					"van-tabs": "/wxcomponents/vant/tabs/index"
+				}
+			}
+		},
+		{
+			"path": "pages/tabbar/Message",
+			"style": {
+				"navigationBarTitleText": "消息",
+				"enablePullDownRefresh": true,
+				"usingComponents": {
+				}
+			}
+		},
+		{
+			"path": "pages/tabbar/Category",
+			"style": {
+				"navigationBarTitleText": "分类",
+				"enablePullDownRefresh": true,
+				"usingComponents": {
+					"van-sidebar": "/wxcomponents/vant/sidebar/index",
+					"van-sidebar-item": "/wxcomponents/vant/sidebar-item/index",
+					"van-grid": "/wxcomponents/vant/grid/index",
+					"van-grid-item": "/wxcomponents/vant/grid-item/index"
+				}
+			}
+		},
+		{
+			"path": "pages/tabbar/Cart",
+			"style": {
+				"navigationBarTitleText": "选品小车",
+				"usingComponents": {
+					"van-checkbox": "/wxcomponents/vant/checkbox/index",
+					"van-checkbox-group": "/wxcomponents/vant/checkbox-group/index",
+					"van-popup": "/wxcomponents/vant/popup/index",
+					"van-toast": "/wxcomponents/vant/toast/index"
+				}
+			}
+		},
+		{
+			"path": "pages/cart/index",
+			"style": {
+				"navigationBarTitleText": "选品小车",
+				"usingComponents": {
+					"van-checkbox": "/wxcomponents/vant/checkbox/index",
+					"van-checkbox-group": "/wxcomponents/vant/checkbox-group/index",
+					"van-popup": "/wxcomponents/vant/popup/index",
+					"van-toast": "/wxcomponents/vant/toast/index"
+				}
+			}
+		},
+		{
+			"path": "pages/search/index",
+			"style": {
+				"navigationBarTitleText": "搜索",
+				"usingComponents": {
+					"van-search": "/wxcomponents/vant/search/index",
+					"van-icon": "/wxcomponents/vant/icon/index",
+					"van-dialog": "/wxcomponents/vant/dialog/index"
+				}
+			}
+		},
+		{
+			"path": "pages/tabbar/Mine",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"navigationStyle": "custom",
+				"usingComponents": {
+					"van-icon": "/wxcomponents/vant/icon/index",
+					"van-count-down": "/wxcomponents/vant/count-down/index",
+					"van-cell": "/wxcomponents/vant/cell/index"
+				}
+			}
+		},
+		{
+			"path": "pages/spu/index",
+			"style": {
+				"navigationBarTitleText": "商品详情",
+				"usingComponents": {
+					"van-popup": "/wxcomponents/vant/popup/index",
+					"van-stepper": "/wxcomponents/vant/stepper/index",
+					"van-dialog": "/wxcomponents/vant/dialog/index",
+					"van-loading": "/wxcomponents/vant/loading/index",
+					"van-icon": "/wxcomponents/vant/icon/index",
+					"van-image": "/wxcomponents/vant/image/index",
+					"van-count-down": "/wxcomponents/vant/count-down/index"
+				}
+			}
+		},
+		{
+			"path": "pages/goods-list/index",
+			"style": {
+				"navigationBarTitleText":"",
+				"usingComponents": {
+					"van-search": "/wxcomponents/vant/search/index",
+					"van-icon": "/wxcomponents/vant/icon/index",
+					"van-count-down": "/wxcomponents/vant/count-down/index"
+				}
+			}
+		},
+		{
+			"path": "pages/goods-list/components/GoodsList",
+			"style": {
+				"navigationBarTitleText":"",
+				"usingComponents": {
+					"van-popup": "/wxcomponents/vant/popup/index",
+					"van-toast": "/wxcomponents/vant/toast/index"
+				}
+			}
+		},
+		{
+			"path": "pages/search/BaseSearch",
+			"style": {
+				"navigationBarTitleText":"",
+				"usingComponents": {
+					"van-search": "/wxcomponents/vant/search/index",
+					"van-icon": "/wxcomponents/vant/icon/index"
+				}
+			}
+		},
+		{
+			"path": "pages/information/index",
+			"style": {
+				"navigationBarTitleText":"资讯"
+			}
+		},
+		{
+			"path": "pages/information/https",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/sku-popup/index",
+			"style": {
+				"usingComponents": {
+					"van-popup": "/wxcomponents/vant/popup/index",
+					"van-stepper": "/wxcomponents/vant/stepper/index",
+					"van-dialog": "/wxcomponents/vant/dialog/index"
+				}
+			}
+		},
+		{
+			"path": "pages/pay-popup/index",
+			"style": {
+				"usingComponents": {
+					"van-popup": "/wxcomponents/vant/popup/index",
+					"van-checkbox": "/wxcomponents/vant/checkbox/index",
+					"van-checkbox-group": "/wxcomponents/vant/checkbox-group/index",
+					"van-dialog": "/wxcomponents/vant/dialog/index"
+				}
+			}
+		},
+		{
+			"path": "pages/cart/common",
+			"style": {
+				"usingComponents": {
+					"van-checkbox": "/wxcomponents/vant/checkbox/index",
+					"van-checkbox-group": "/wxcomponents/vant/checkbox-group/index",
+					"van-popup": "/wxcomponents/vant/popup/index",
+					"van-stepper": "/wxcomponents/vant/stepper/index",
+					"van-swipe-cell": "/wxcomponents/vant/swipe-cell/index",
+					"van-cell": "/wxcomponents/vant/cell/index",
+					"van-cell-group": "/wxcomponents/vant/cell-group/index",
+					"van-dialog": "/wxcomponents/vant/dialog/index",
+					"van-icon": "/wxcomponents/vant/icon/index",
+					"van-notice-bar": "/wxcomponents/vant/notice-bar/index"
+				}
+			}
+		},
+		{
+			"path": "pages/order/order-list/index",
+			"style": {
+				"navigationBarTitleText": "我的订单",
+				"usingComponents": {
+					"van-checkbox": "/wxcomponents/vant/checkbox/index",
+					"van-checkbox-group": "/wxcomponents/vant/checkbox-group/index",
+					"van-popup": "/wxcomponents/vant/popup/index",
+					"van-toast": "/wxcomponents/vant/toast/index",
+					"van-search": "/wxcomponents/vant/search/index",
+					"van-tab": "/wxcomponents/vant/tab/index",
+					"van-tabs": "/wxcomponents/vant/tabs/index",
+					"van-icon": "/wxcomponents/vant/icon/index"
+				}
+			}
+		},
+		{
+			"path": "pages/order/order-confirm/index",
+			"style": {
+				"navigationBarTitleText": "确认订单",
+				"usingComponents": {
+					"van-icon": "/wxcomponents/vant/icon/index",
+					"van-field": "/wxcomponents/vant/field/index",
+					"van-cell": "/wxcomponents/vant/cell/index",
+					"van-cell-group": "/wxcomponents/vant/cell-group/index"
+				}
+			}
+		},
+		{
+			"path": "pages/order/pay-success/index",
+			"style": {
+				"navigationBarTitleText": "支付成功"
+			}
+		},
+		{
+			"path": "pages/order/order-detail/index",
+			"style": {
+				"navigationBarTitleText":"订单详情",
+				"usingComponents": {
+					"van-count-down": "/wxcomponents/vant/count-down/index"
+				}
+			}
+		},
+		{
+			"path": "pages/auth/auth-popup",
+			"style": {
+				"navigationBarTitleText":"订单详情",
+				"usingComponents": {
+					"van-icon": "/wxcomponents/vant/icon/index",
+					"van-popup": "/wxcomponents/vant/popup/index"
+				}
+			}
+		}
+	],
+	"subPackages": [{
+		"root": "pagesA",
+		"pages": [
+			{
+				"path": "rights/index",
+				"style": {
+					"navigationBarTitleText": "认证权益"
+				}
+			},
+			{
+				"path": "customer-info/index",
+				"style": {
+					"navigationBarTitleText": "认证资料"
+				}
+			},
+			{
+				"path": "customer-info/details",
+				"style": {
+					"navigationBarTitleText": "认证资料",
+					"usingComponents": {
+						"van-cell": "/wxcomponents/vant/cell/index",
+						"van-cell-group": "/wxcomponents/vant/cell-group/index",
+						"van-tab": "/wxcomponents/vant/tab/index",
+						"van-tabs": "/wxcomponents/vant/tabs/index",
+						"van-dialog": "/wxcomponents/vant/dialog/index"
+					}
+				}
+			},
+			{
+				"path": "customer-info/status",
+				"style": {
+					"navigationBarTitleText": "认证资料"
+				}
+			},
+			{
+				"path": "customer-info/components/upload",
+				"style": {
+					"usingComponents": {
+						"van-popup": "/wxcomponents/vant/popup/index"
+					}
+				}
+			},
+			{
+				"path": "customer-info/components/base-info",
+				"style": {
+					"usingComponents": {
+						"van-cell": "/wxcomponents/vant/cell/index",
+						"van-icon": "/wxcomponents/vant/icon/index",
+						"van-cell-group": "/wxcomponents/vant/cell-group/index"
+					}
+				}
+			},
+			{
+				"path": "change-category/index",
+				"style": {
+					"navigationBarTitleText": "",
+					"navigationStyle": "custom",
+					"usingComponents": {
+						"van-icon": "/wxcomponents/vant/icon/index"
+					}
+				}
+			},
+			{
+				"path": "my-favorite/index",
+				"style": {
+					"navigationBarTitleText": "我的收藏"
+				}
+			},
+			{
+				"path": "ground/index",
+				"style": {
+					"navigationBarTitleText": "上架商品",
+					"usingComponents": {
+						"van-checkbox": "/wxcomponents/vant/checkbox/index",
+						"van-checkbox-group": "/wxcomponents/vant/checkbox-group/index",
+						"van-popup": "/wxcomponents/vant/popup/index",
+						"van-toast": "/wxcomponents/vant/toast/index"
+					}
+				}
+			},
+			{
+				"path": "about-zs/index",
+				"style": {
+					"navigationBarTitleText": "关于众上"
+				}
+			},
+			{
+				"path": "help/index",
+				"style": {
+					"navigationBarTitleText": "帮助中心",
+					"usingComponents":{
+						"van-cell": "/wxcomponents/vant/cell/index"
+					}
+				}
+			},
+			{
+				"path": "client-web/index",
+				"style": {
+					"navigationBarTitleText": "商家后台",
+					"usingComponents":{
+						"van-cell": "/wxcomponents/vant/cell/index"
+					}
+				}
+			},
+			{
+				"path": "address/list",
+				"style": {
+					"navigationBarTitleText": "收货地址管理",
+					"usingComponents": {
+						"van-radio": "/wxcomponents/vant/radio/index",
+						"van-radio-group": "/wxcomponents/vant/radio-group/index",
+						"van-toast": "/wxcomponents/vant/toast/index"
+					}
+				}
+			},
+			{
+				"path": "address/edit",
+				"style": {
+					"navigationBarTitleText": "编辑收货地址",
+					"usingComponents": {
+						"van-cell": "/wxcomponents/vant/cell/index",
+						"van-cell-group": "/wxcomponents/vant/cell-group/index",
+						"van-icon": "/wxcomponents/vant/icon/index"
+					}
+				}
+			},
+			{
+				"path": "workbench/index",
+				"style": {
+				"enablePullDownRefresh": true,
+				"navigationBarTitleText": "工作台",
+					"usingComponents": {
+						"van-tab": "/wxcomponents/vant/tab/index",
+						"van-tabs": "/wxcomponents/vant/tabs/index",
+						"van-grid": "/wxcomponents/vant/grid/index",
+						"van-popup": "/wxcomponents/vant/popup/index",
+						"van-grid-item": "/wxcomponents/vant/grid-item/index",
+						"van-loading": "/wxcomponents/vant/loading/index",
+						"van-icon": "/wxcomponents/vant/icon/index",
+						"painter": "/wxcomponents/painter/painter"
+					}
+				}
+			},
+			{
+				"path": "workbench/order-list/index",
+				"style": {
+					"navigationBarTitleText": "推荐订单明细",
+					"usingComponents": {
+						"van-toast": "/wxcomponents/vant/toast/index",
+						"van-tab": "/wxcomponents/vant/tab/index",
+						"van-tabs": "/wxcomponents/vant/tabs/index",
+						"van-icon": "/wxcomponents/vant/icon/index"
+					}
+				}
+			},
+			{
+				"path": "workbench/customer-list/index",
+				"style": {
+					"navigationBarTitleText": "推荐客户明细",
+					"usingComponents": {
+						"van-toast": "/wxcomponents/vant/toast/index",
+						"van-tab": "/wxcomponents/vant/tab/index",
+						"van-tabs": "/wxcomponents/vant/tabs/index",
+						"van-icon": "/wxcomponents/vant/icon/index"
+					}
+				}
+			},
+			{
+				"path": "workbench/details-list/index",
+				"style": {
+					"navigationBarTitleText": "详情列表",
+					"usingComponents": {
+						"van-toast": "/wxcomponents/vant/toast/index",
+						"van-tab": "/wxcomponents/vant/tab/index",
+						"van-tabs": "/wxcomponents/vant/tabs/index",
+						"van-icon": "/wxcomponents/vant/icon/index"
+					}
+				}
+			},
+			{
+				"path": "workbench/new-gift-bag/index",
+				"style": {
+					"navigationBarTitleText": "分享官新人礼包",
+					"usingComponents": {
+					}
+				}
+			},
+			{
+				"path": "coupon/index",
+				"style": {
+					"navigationBarTitleText": "优惠券",
+					"usingComponents": {
+						"van-toast": "/wxcomponents/vant/toast/index",
+						"van-tab": "/wxcomponents/vant/tab/index",
+						"van-tabs": "/wxcomponents/vant/tabs/index",
+						"van-icon": "/wxcomponents/vant/icon/index"
+					}
+				}
+			},
+			{
+				"path": "coupon/receive",
+				"style": {
+					"navigationBarTitleText": "领券中心",
+					"usingComponents": {
+						"van-toast": "/wxcomponents/vant/toast/index"
+					}
+				}
+			},
+			{
+				"path": "coupon/select",
+				"style": {
+					"navigationBarTitleText": "选择优惠券",
+					"usingComponents": {
+						"van-toast": "/wxcomponents/vant/toast/index",
+						"van-checkbox": "/wxcomponents/vant/checkbox/index",
+						"van-checkbox-group": "/wxcomponents/vant/checkbox-group/index"
+					}
+				}
+			},
+			{
+				"path": "invite-rewards/index",
+				"style": {
+					"navigationBarTitleText": "邀请有礼",
+					"usingComponents": {
+						"van-icon": "/wxcomponents/vant/icon/index",
+						"van-popup": "/wxcomponents/vant/popup/index",
+						"van-toast": "/wxcomponents/vant/toast/index",
+						"painter": "/wxcomponents/painter/painter"
+					}
+				}
+			},
+			{
+				"path": "extract/index",
+				"style": {
+					"navigationBarTitleText": "提现",
+					"usingComponents": {
+						"van-toast": "/wxcomponents/vant/toast/index",
+						"van-tab": "/wxcomponents/vant/tab/index",
+						"van-tabs": "/wxcomponents/vant/tabs/index",
+						"van-icon": "/wxcomponents/vant/icon/index"
+					}
+				}
+			},
+			{
+				"path": "my-balance/index",
+				"style": {
+					"navigationBarTitleText": "我的余额",
+					"usingComponents": {
+						"van-toast": "/wxcomponents/vant/toast/index",
+						"van-tab": "/wxcomponents/vant/tab/index",
+						"van-tabs": "/wxcomponents/vant/tabs/index",
+						"van-icon": "/wxcomponents/vant/icon/index"
+					}
+				}
+			}
+		]
+	}],
+	"tabBar": {
+		"color": "#242629",
+		"selectedColor": "#10967B",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [
+			{
+				"pagePath": "pages/tabbar/Home",
+				"iconPath": "static/images/tabbar/icon_home.png",
+				"selectedIconPath": "static/images/tabbar/icon_home_active.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/tabbar/Category",
+				"iconPath": "static/images/tabbar/icon_category.png",
+				"selectedIconPath": "static/images/tabbar/icon_category_active.png",
+				"text": "分类"
+			},
+			{
+				"pagePath": "pages/tabbar/Message",
+				"iconPath": "static/images/tabbar/icon_msg.png",
+				"selectedIconPath": "static/images/tabbar/icon_msg_active.png",
+				"text": "消息"
+			},
+			{
+				"pagePath": "pages/tabbar/Cart",
+				"iconPath": "static/images/tabbar/icon_cart.png",
+				"selectedIconPath": "static/images/tabbar/icon_cart_active.png",
+				"text": "选品车"
+			},
+			{
+				"pagePath": "pages/tabbar/Mine",
+				"iconPath": "static/images/tabbar/icon_me.png",
+				"selectedIconPath": "static/images/tabbar/icon_me_active.png",
+				"text": "我的"
+			}
+		]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarBackgroundColor": "#ffffff",
+		"backgroundColor": "#F6F5F8"
+	}
+}

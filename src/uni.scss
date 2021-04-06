@@ -1,0 +1,97 @@
+/* 颜色变量 */
+
+/* 行为相关颜色 */
+$uni-color-theme: #10967B; // 主题色
+$uni-color-primary: #242629; //文字
+$uni-color-success: #4cd964;
+$uni-color-warning: #f0ad4e;
+$uni-color-error: #dd524d;
+$uni-color-info: #66686c;
+$uni-color-gray: #71767D;
+$uni-color-grey: #959CA7;
+$uni-color-blue: #45658F;
+$uni-color-money: #FF7640;
+
+/* 背景颜色 */
+$uni-bg-color:#F6F6F6;
+$uni-bg-color-grey:#f8f8f8;
+$uni-bg-color-primary:#10967B;
+$uni-bg-color-hover:#f1f1f1;//点击状态颜色
+$uni-bg-color-mask:rgba(0, 0, 0, 0.4);//遮罩颜色
+
+.bg{
+  &-primary{
+    background-color: $uni-bg-color-primary !important;
+  }
+  &-theme{
+    background-color: $uni-color-theme !important;
+  }
+  &-white{
+    background-color: #ffffff !important;
+  }
+  &-black{
+    background-color: #121314 !important;
+  }
+  &-gray{
+    background-color: $uni-color-gray !important;
+  }
+  &-light-grey{
+    background-color: $uni-bg-color !important;
+  }
+}
+.hairline{
+  &-bottom{
+    border-bottom: 1px solid #f4f4f4 !important;
+  }
+  &-top{
+    border-top: 1px solid #f4f4f4 !important;
+  }
+  &-border{
+    border: 1px solid #f4f4f4 !important;
+  }
+}
+.fc{
+  &-primary{
+    color: $uni-bg-color-primary !important;
+  }
+  &-theme{
+    color: $uni-color-theme !important;
+  }
+  &-white{
+    color: #ffffff !important;
+  }
+  &-black{
+    color: #242629 !important;
+  }
+  &-gray{
+    color: $uni-color-gray !important;
+  }
+  &-grey{
+    color: $uni-color-grey !important;
+  }
+  &-money{
+    color:$uni-color-money !important;
+  }
+}
+.price-text{
+  display: inline-block;
+  color: $uni-color-money;
+  font-size: 36rpx;
+  font-weight: 700;
+  &::first-letter{
+    font-size: 24rpx;
+  }
+}
+
+button.action-btn{
+  background-color: $uni-color-theme;
+  color: #ffffff;
+  border-radius: 22px;
+  font-weight: 600;
+  // height: 76rpx;
+  // line-height: 76rpx;
+  padding: 22rpx 44rpx;
+  font-size: 28rpx;
+  line-height: 1;
+  margin: 0;
+}

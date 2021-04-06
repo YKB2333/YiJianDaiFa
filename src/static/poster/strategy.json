@@ -1,0 +1,113 @@
+{
+  "width": "670px",
+  "height": "1060px",
+  "background": "transparent",
+  "views": [
+    {
+      "type": "image",
+      "url": "strategy.png",
+      "key": "background",
+      "css": {
+        "width": "670px",
+        "height": "1060px",
+        "top": "0px",
+        "left": "0px",
+        "rotate": "0",
+        "borderRadius": "",
+        "borderWidth": "",
+        "borderColor": "#000000",
+        "shadow": "",
+        "mode": "scaleToFill"
+      }
+    },
+    {
+      "type": "image",
+      "url": "https://desk-fd.zol-img.com.cn/t_s960x600c5/g5/M00/0F/08/ChMkJlauzXWIDrXBAAdCg2xP7oYAAH9FQOpVAIAB0Kb342.jpg",
+	    "key": "logo",
+      "css": {
+        "width": "126px",
+        "height": "126px",
+        "top": "202px",
+        "left": "274px",
+        "rotate": "0",
+        "borderRadius": "360px",
+        "borderWidth": "",
+        "borderColor": "#000000",
+        "shadow": "",
+        "mode": "scaleToFill"
+      }
+    },
+    {
+      "type": "image",
+      "url": "https://desk-fd.zol-img.com.cn/t_s960x600c5/g5/M00/0F/08/ChMkJlauzXWIDrXBAAdCg2xP7oYAAH9FQOpVAIAB0Kb342.jpg",
+	    "key": "qrCode",
+      "css": {
+        "width": "302px",
+        "height": "302px",
+        "top": "469px",
+        "left": "184px",
+        "rotate": "0",
+        "borderRadius": "8px",
+        "borderWidth": "",
+        "borderColor": "#000000",
+        "shadow": "",
+        "mode": "scaleToFill"
+      }
+    },
+    {
+      "type": "text",
+      "text": "邀请您进货",
+	    "key": "value",
+      "css": {
+        "color": "#000000",
+        "background": "rgba(0,0,0,0)",
+        "width": "537.6788059701494px",
+        "height": "42.89999999999999px",
+        "top": "400px",
+        "left": "70px",
+        "rotate": "0",
+        "borderRadius": "",
+        "borderWidth": "",
+        "borderColor": "#000000",
+        "shadow": "",
+        "padding": "0px",
+        "fontSize": "30px",
+        "fontWeight": "normal",
+        "maxLines": "1",
+        "lineHeight": "43.290000000000006px",
+        "textStyle": "fill",
+        "textDecoration": "none",
+        "fontFamily": "PingFang SC",
+        "textAlign": "center"
+      }
+    },
+    {
+      "type": "text",
+      "text": "广州众上投资控股集团有限公司",
+	    "key": "companyName",
+      "css": {
+        "color": "#000000",
+        "background": "rgba(0,0,0,0)",
+        "width": "537.6788059701494px",
+        "height": "42.89999999999999px",
+        "top": "352px",
+        "left": "70px",
+        "rotate": "0",
+        "borderRadius": "",
+        "borderWidth": "",
+        "borderColor": "#000000",
+        "shadow": "",
+        "padding": "0px",
+        "fontSize": "30px",
+        "fontWeight": "normal",
+        "maxLines": "1",
+        "lineHeight": "43.290000000000006px",
+        "textStyle": "fill",
+        "textDecoration": "none",
+        "fontFamily": "PingFang SC",
+        "textAlign": "center"
+      }
+    }
+  ]
+}
+    

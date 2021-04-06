@@ -1,0 +1,27 @@
+# 告诉EditorConfig插件，这是根文件，不用继续往上查找
+root = true
+
+# 匹配全部文件
+[*]
+
+# 结尾换行符，可选"lf"、"cr"、"crlf"
+end_of_line = lf
+
+# 在文件结尾插入新行
+insert_final_newline = true
+
+# 删除一行中的前后空格
+trim_trailing_whitespace = true
+
+# 匹配js html css结尾的文件
+[*.{js, html, css}]
+
+# 设置字符集
+charset = utf-8
+
+indent_style = space
+indent_size = 2
+
+# .md 文件不去掉每行末尾的空格
+[*.md]
+trim_trailing_whitespace = false
